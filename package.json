@@ -1,0 +1,46 @@
+{
+  "name": "@heidelmann91/eslint-plugin-parameter-ordering",
+  "version": "0.0.20",
+  "description": "Typescript parameter ordering eslint rules",
+  "scripts": {
+    "test": "npx jest -c jest.config.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublish": "npm run build"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heidelmann91/eslint-plugin-parameter-ordering.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "linter",
+    "lint",
+    "typescript"
+  ],
+  "author": {
+    "name": "Christoph Heidelmann",
+    "email": "christoph.heidelmann@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.47.1",
+    "@typescript-eslint/utils": "^5.47.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "jest": "^29.3.1",
+    "jest-junit": "^15.0.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
